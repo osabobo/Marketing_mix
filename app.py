@@ -43,9 +43,9 @@ def main ():
 
     if add_selectbox == 'Online':
         week = st.text_input('Weekly')
-        tv = st.text_input('Tv')
-        radio=st.text_input('Radio')
-        newspaper=st.text_input('Newspaper')
+        tv = st.text_input('Tv(Number of advert)')
+        radio=st.text_input('Radio (Number of advert)')
+        newspaper=st.text_input('Newspaper(Number of advert)')
 
 
         result=""
@@ -55,7 +55,7 @@ def main ():
 
         if st.button("Predict"):
             result = prediction(week,tv,radio,newspaper)
-            st.write("Sales amount")
+            st.write("Number of Sales")
             st.success(result)
 
 
