@@ -3,7 +3,6 @@ import pandas as pd
 import joblib
 import os
 import streamlit as st
-from xgboost import XGBRegressor
 #cv_model = open('model.pkl', 'rb')
 cv = joblib.load('model2.pkl')
 
